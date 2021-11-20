@@ -48,25 +48,25 @@ export default new Vuex.Store({
 
 ## Implementation
 
-###Overview
+### Overview
 In order to keep time consistent across multiple use cases, GCD is set around UTC (Cordinated Universal Time) through the property values in the event obj `expiration_date: new Date(Date.UTC()` and `date: new Date()`.
 
 For more information on how these functions work, refer to [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC).
 
-##Basic usage and examples
-####Dynamicaly update links:
+## Basic usage and examples
+#### Dynamicaly update links:
 `example`
 
-####Dynamicaly update links:
+#### Dynamicaly update links:
 `example`
 ## Getters, Mutations and Actions
 List of available getters, mutations and actions
 
-####Getters
+#### Getters
 `getter()`:
 
-####Mutations
+#### Mutations
 `mutation(state)`:
 
-####Actions
+#### Actions
 `action(state)`:
