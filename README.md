@@ -5,7 +5,7 @@
 - Enable your users to have a more consistent experience by building your application around UTC-0
 - And more!
 
-##Features
+## Features
 - Global Countdown based on UTC;
 - Options property that allows customization on time precision, performance and how date is displayed
 - And more to come!!
