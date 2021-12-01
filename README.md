@@ -63,10 +63,24 @@ For more information on how these functions work, refer to [MDN Web Docs](https:
 List of available getters, mutations and actions
 
 #### Getters
-`getter()`:
+Getters usually have the same name as they object they retrieve, just instead being formated in `camelCase`.
+
+`$gcd`: Returns the gdc module object;
+
+`$user`: Returns the user object;
+
+`$currentEvent`: Returns the current_event object;
+
+`$events`: Returns the events array. Stores events objects;
+
+`$config`: Return the configuration object;
+
+##### Utils
+
+`$displayDate`: Returns the current event's formatted date. Default as `WW/DD/HH/MM/SS`
 
 #### Mutations
 `mutation(state)`:
 
 #### Actions
-`action(state)`:
+`action(state)`: 
