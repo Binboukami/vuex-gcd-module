@@ -17,6 +17,7 @@
 - Vuex: ^3.4.0
 
 **Setting up**
+
 The Vuex Global Countdown module is easy to implement like any other vuex module.
 Just drop the `gcd` folder inside your project vuex `store` and and import it in your `store/index.js`
 
