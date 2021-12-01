@@ -1,5 +1,5 @@
 export default {
-  updateTime(state) {
+  setUserTime(state) {
     state.gcd.user.current_date = new Date();
   },
   processTime(state, payload) {
