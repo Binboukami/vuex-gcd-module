@@ -63,7 +63,7 @@ For more information on how these functions work, refer to [MDN Web Docs](https:
 List of available getters, mutations and actions
 
 #### Getters
-Getters usually have the same name as they object they retrieve, just instead being formated in `camelCase`.
+Getters usually have the same name as the object they retrieve, just instead being formated in `camelCase`.
 
 `$gcd`: Returns the gdc module object;
 
