@@ -112,7 +112,21 @@ Then in your vue component
 List of available getters, mutations and actions
 
 #### Getters
-`getter()`:
+Getters usually have the same name as the object they retrieve, just instead being formated in `camelCase`.
+
+`$gcd`: Returns the gdc module object;
+
+`$user`: Returns the user object;
+
+`$currentEvent`: Returns the current_event object;
+
+`$events`: Returns the events array. Stores events objects;
+
+`$config`: Return the configuration object;
+
+##### Utils
+
+`$displayDate`: Returns the current event's formatted date. Default as `WW/DD/HH/MM/SS`
 
 #### Mutations
 `mutation(state)`:
