@@ -56,10 +56,58 @@ For more information on how these functions work, refer to [MDN Web Docs](https:
 
 ## Basic usage and examples
 #### Dynamicaly update links:
-`example`
 
-#### Dynamicaly update links:
-`example`
+In this example, the module request an url if the **current_event** status is `true` and stores in a variable acessible to the vue component.
+
+
+In your `store/index.js`
+
+```javascript
+state:{ href: '' },
+getters:{
+  $getHref: (state) => {
+    return state.hrefs;
+  },
+}
+mutations: {
+	hrefChange(payload){
+		let gcd = this.state.gcd.gcd
+		if (gcd.current_event.status){
+			this.state.hrefs = payload.href
+		}
+	},
+},
+actions: {
+	async hrefChange({ commit }){
+		await axios.get('https://gcd.api/hrefs').then(res => {
+			commit("hrefChange", { href: res.data });
+		})
+	},
+},
+```
+
+In your `App.vue`
+
+```javascript
+mounted(){
+	this.hrefChange();
+}
+```
+Then in your vue component
+
+```html
+<template>
+  <button href="$getHref">
+      <slot>Button</slot>
+  </button>
+</template>
+```
+```javascript
+  computed:{
+    ...mapGetters(["$getHref"])
+  }
+```
+
 ## Getters, Mutations and Actions
 List of available getters, mutations and actions
 
