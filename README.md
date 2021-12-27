@@ -62,11 +62,11 @@ For more information on how these functions work, refer to [MDN Web Docs](https:
 ## Getters, Mutations and Actions
 List of available getters, mutations and actions
 
-####Getters
+#### Getters
 `getter()`:
 
-####Mutations
+#### Mutations
 `mutation(state)`:
 
-####Actions
+#### Actions
 `action(state)`:
