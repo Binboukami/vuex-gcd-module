@@ -10,6 +10,11 @@ export default {
       commit("setRemainingTime", { event_date: gcd.event_date, current_date: usr.current_date });
     })
   },
+  setStatus({ commit, dispatch }){
+    return dispatch("setRemainingTime").then(() => {
+      commit("setStatus");
+    })
+  },
     });
   },
 };

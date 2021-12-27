@@ -5,6 +5,14 @@ export default {
 	setRemainingTime(state, payload) {
 		state.gcd.current_event.remaining_time = payload.event_date - payload.current_date;
 	},
+	setStatus(state) {
+		if (state.gcd.current_event.remaining_time > 0) {
+			state.gcd.current_event.status = true;
+		} else {
+			state.gcd.current_event.status = false;
+			clearInterval(state.gcd.configuration.interval.ref);
+		}
+	},
     const config = state.gcd.configuration;
     const fdate = state.gcd.current_event.display_date;
 
