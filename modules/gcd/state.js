@@ -1,5 +1,9 @@
 export default {
   gcd: {
+		user: {
+			current_date: null,
+			// Other options like prefered date format
+		},
 		current_event: {
 			id: null,
 			description: null,
