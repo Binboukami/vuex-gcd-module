@@ -15,6 +15,12 @@ export default {
       commit("setStatus");
     })
   },
+  chkEvents({ commit }){
+    commit("chkEvents");
+  },
+  async setDisplayTime({ commit, dispatch }) {
+    await dispatch("setStatus").then(() => {
+      commit("setDisplayTime");
     });
   },
 };
