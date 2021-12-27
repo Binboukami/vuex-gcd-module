@@ -2,9 +2,9 @@ export default {
   setUserTime(state) {
     state.gcd.user.current_date = new Date();
   },
-  processTime(state, payload) {
-    //local variables
-    const current_event = state.gcd.current_event;
+	setRemainingTime(state, payload) {
+		state.gcd.current_event.remaining_time = payload.event_date - payload.current_date;
+	},
     const config = state.gcd.configuration;
     const fdate = state.gcd.current_event.display_date;
 
