@@ -1,30 +1,19 @@
 export default {
   gcd: {
-    user:{
-      current_date: null,
-      // Other options like prefered date format
-    },
-    current_event: {
-      id: "event_Zero",
-      description: "event_Zero happens when initial conditions are met",
-      event_date: new Date(Date.UTC(2021, 11, 3, 9, 0)),
-      next_event: {
-        id: "",
-        description: "",
-        date: null,
-      },
-      remaining_time: null,
-      status: false,
-      display_date: {
-        weeks: null,
-        days: null,
-        hours: null,
-        min: null,
-        sec: null,
-      },
-    },
-    events: [
-      {
+		current_event: {
+			id: null,
+			description: null,
+			event_date: null,
+			remaining_time: null,
+			status: false,
+			display_date: {
+				weeks: null,
+				days: null,
+				hours: null,
+				min: null,
+				sec: null,
+			},
+		},
         id: "event_A",
         description: "Event_A happens when x conditions are met",
         date: null,
