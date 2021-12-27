@@ -1,7 +1,7 @@
 export default {
-  setUserTime(state) {
-    state.gcd.user.current_date = new Date();
-  },
+	setUserTime(state) {
+		state.gcd.user.current_date = new Date();
+	},
 	setRemainingTime(state, payload) {
 		state.gcd.current_event.remaining_time = payload.event_date - payload.current_date;
 	},
