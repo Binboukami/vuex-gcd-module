@@ -1,6 +1,6 @@
 export default {
   setUserTime({ commit }) {
-    commit("updateTime");
+    commit("setUserTime");
   },
   setRemainingTime({ commit, dispatch, getters }){
     let gcd = getters.$currentEvent;
