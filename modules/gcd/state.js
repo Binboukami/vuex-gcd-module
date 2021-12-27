@@ -38,4 +38,24 @@ export default {
 				expiration_date: new Date(Date.UTC(2021, 10, 30, 22, 0)),
 			},
 		],
+		configuration: {
+			interval: {
+				ref: null,
+				update: 1000,
+			},
+			properties: {
+				//Things like date formating in DD/MM/YYYY or MM/DD/YYYYY
+				//And also stuff related to user/dev preferences
+			},
+			definitions: {
+				date: {
+					weeks: 1000 * 60 * 60 * 24 * 7,
+					days: 1000 * 60 * 60 * 24,
+					hours: 1000 * 60 * 60,
+					min: 1000 * 60,
+					sec: 1000,
+				},
+			},
+		},
+	},
 };
