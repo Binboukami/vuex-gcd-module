@@ -1,6 +1,6 @@
 # Global Countdown [Archived]
 
-As of January 14, 2021 this repo is archieved and it's now read-only. The project was archived to focus on other projects
+As of **January 14, 2022** this repo is archieved and it's now read-only. The project was archived to focus on other projects
 
 ### Use cases
 - Create custom events with reactive components based on user acess time and date
